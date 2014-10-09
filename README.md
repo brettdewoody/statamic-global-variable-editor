@@ -35,3 +35,12 @@ Usage
 You'll have a new tab in your admin panel labeled `Constants`. Clicking the tab will display your editable global variables and give you the option to edit them. 
 
 To change a value, simply enter the updated value, then click the Save & Publish button at the bottom. 
+
+Beer Me
+-------
+
+If you find the add-on useful and use it on projects, consider buying me a beer. No pressure, but you'll make me happy and help to keep the Globes add-on up-to-date.
+
+<a href='https://pledgie.com/campaigns/26995'><img alt='Click here to lend your support to: Globes - Statamic Add-on and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/26995.png?skin_name=chrome' border='0' ></a>
+
+Thanks, and I hope you enjoy Globes and it makes your life easier. 
