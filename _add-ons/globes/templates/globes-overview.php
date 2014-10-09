@@ -3,14 +3,14 @@
 	<div class="section content">
 		
 		<?php 
-			foreach ($settings as $key => $setting) {
-				if (substr($key,0,7) == 'global_' ) {
+			foreach ($globals as $key => $setting) {
+				
 		?>
 			<div class="input-block input-text">
-				<label for="<?=$key?>"><?= Slug::prettify(substr($key,7)) ?></label><input type="text" name="vars['<?= $key ?>']" value="<?= $setting ?>">
+				<label for="<?=$key?>"><?= Slug::prettify($key) ?></label><input type="text" name="vars['<?= $key ?>']" value="<?= $setting ?>">
 			</div>
 		<?php
-				}
+				
 			}
 		?>
 		

@@ -11,8 +11,10 @@ class Tasks_globes extends Tasks {
 		$theme_yaml = File::get($theme_settings);
 		
 		$settings = YAML::parse($theme_yaml);
+		
+		$globals = $settings['global'];
 
-		return compact('theme_settings', 'theme_yaml', 'settings');
+		return compact('theme_settings', 'theme_yaml', 'globals');
 	}
 
 }

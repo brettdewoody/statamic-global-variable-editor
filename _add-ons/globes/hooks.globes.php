@@ -37,7 +37,7 @@ class Hooks_globes extends Hooks {
 			foreach($vars as $key => $var) {
 				
 				$linesFound = preg_grep($key, $yamlContents);
-				$yamlContents[key($linesFound)] =  substr($key,1,-1) . ': ' . $var . "\n";
+				$yamlContents[key($linesFound)] =  '  ' . substr($key,1,-1) . ': ' . $var . "\n";
 				
 			}
 			

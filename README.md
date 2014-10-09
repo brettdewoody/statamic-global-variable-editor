@@ -14,11 +14,20 @@ Installation & Setup
 
 4. Open your `_themes/[theme-name]/theme.yaml` file define the global variables you want to be editable. 
 
- To make a variable editable prefex the variable with `global_`.
+ To make a variable editable, first create a first-level var of `global`, then nest your variables under the `global` var.
 
- For example, if you wanted to have an editable phone number global variable, create a variable named `global_phone`.
+ For example, if you wanted to have an editable phone number global variable you would do this.
+ 
+    global:
+      phone: 555-555-5555
+      
+ If you wanted to add another global variable, say an email address, your `global` variable would look like so:
+ 
+    global:
+      phone: 555-555-5555
+      email: you@yourdomain.com
 
- Display the global variables in your template using the `{{ global_NAME }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ global_phone }}` to our templates or layouts.
+ Display the global variables in your template using the `{{ global:NAME }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ global:phone }}` to our templates or layouts.
 
 Usage
 -----
