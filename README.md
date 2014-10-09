@@ -20,8 +20,6 @@ Installation & Setup
 
  Display the global variables in your template using the `{{ global_NAME }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ global_phone }}` to our templates or layouts.
 
-5. Bask in the glory of having installed the add-on.
-
 Usage
 -----
 
