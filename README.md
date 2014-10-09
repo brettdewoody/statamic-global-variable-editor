@@ -10,9 +10,12 @@ Installation & Setup
 2. Drag `_add-ons/globes` into your site's `_add-ons` folder.
 3. Open your `_config/settings.yaml` file and add `globes:true` to the `_admin_nav` setting.
 4. Open your `_themes/[theme-name]/theme.yaml` file define the global variables you want to be editable. 
-...To make a variable editable prefex the variable with `global_`.
-...For example, if you wanted to have an editable phone number global variable, create a variable named `global_phone`.
-...Display the global variables in your template using the `{{ global_NAME }} tag. In our example from before, if we wanted to display the phone number we would add {{ global_phone }} to our templates or layouts.
+
+ ...To make a variable editable prefex the variable with `global_`.
+
+ ...For example, if you wanted to have an editable phone number global variable, create a variable named `global_phone`.
+
+ ...Display the global variables in your template using the `{{ global_NAME }} tag. In our example from before, if we wanted to display the phone number we would add {{ global_phone }} to our templates or layouts.
 5. Bask in the glory of having installed the add-on.
 
 Usage
