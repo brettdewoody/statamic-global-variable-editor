@@ -27,7 +27,7 @@ Installation & Setup
     &nbsp;&nbsp;phone: 555-555-5555  
     &nbsp;&nbsp;email: you@yourdomain.com  
 
- Display the global variables in your template using the `{{ global:NAME }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ global:phone }}` to our templates or layouts.
+5. Display the global variables in your template using the `{{ global:NAME }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ global:phone }}` to our templates or layouts.
 
 Usage
 -----
