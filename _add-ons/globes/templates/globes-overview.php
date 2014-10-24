@@ -7,7 +7,7 @@
 				
 		?>
 			<div class="input-block input-text">
-				<label for="<?=$key?>"><?= Slug::prettify($key) ?></label><input type="text" name="vars['<?= $key ?>']" value="<?= $setting ?>">
+				<label for="<?php echo $key; ?>"><?php echo Slug::prettify($key); ?></label><input type="text" name="vars['<?php echo $key; ?>']" value="<?php echo $setting; ?>">
 			</div>
 		<?php
 				
