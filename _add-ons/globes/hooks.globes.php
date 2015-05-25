@@ -26,7 +26,7 @@ class Hooks_globes extends Hooks {
 			$data = $this->tasks->getThemeSettings();
 			$vars = Request::fetch('vars');
 			
-			$data = array_merge($data, Request::fetch('vars'));
+			$data['globals'] = array_merge($data['globals'], Request::fetch('vars'));
 			
 			File::put($this->tasks->getThemeSettingsPath(), YAML::dump($data));
 
