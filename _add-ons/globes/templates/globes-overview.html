@@ -1,0 +1,16 @@
+<div class="container">
+	<form action="/admin.php/{{ route }}/update" method="post" class="primary-form">
+	<div class="section content">
+		{{ social }}
+			<div class="input-block input-text">
+				<input type="hidden" name="vars[social][{{zero_index}}][service]" value="{{ service }}">
+				<label for="{{ service }}">{{ service }}</label><input type="text" name="vars[social][{{zero_index}}][value]" value="{{ value }}">
+			</div>
+		{{ /social }}		
+	</div>
+	<div id="publish-action" class="footer-controls push-down">
+      <input type="submit" class="btn" value="Save &amp; Publish" id="publish-submit">
+    </div>
+	</form>
+	{{# all_the_vars remove_underscored="no" sort="yes" #}}
+</div>
