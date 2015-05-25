@@ -3,12 +3,10 @@
 class API_globes extends API {
 
 	public function get($var) {
-		$data = $this->tasks->getOverviewData();
-		
-		return ($data[$var]);
+		return ($this->tasks->getGlobal($var));
 	}
 
-	public function getAllThemeData($var) {
-		return ($this->tasks->getOverviewData());
+	public function getGlobals() {
+		return ($this->tasks->getGlobals());
 	}
 }
