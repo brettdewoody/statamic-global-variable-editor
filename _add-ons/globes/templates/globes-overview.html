@@ -1,0 +1,17 @@
+<div class="container">
+	<form action="/admin.php/{{ route }}/update" method="post" class="primary-form">
+	<div class="section content">
+		<fieldset>
+			{{ globals }}
+				<div class="input-block input-text">
+					<input type="hidden" name="vars[globals][{{zero_index}}][service]" value="{{ name }}">
+					<label for="{{ name }}">{{ name }}</label><input type="text" name="vars[globals][{{zero_index}}][value]" value="{{ value }}">
+				</div>
+			{{ /globals }}
+		</fieldset>
+	</div>
+	<div id="publish-action" class="footer-controls push-down">
+      <input type="submit" class="btn" value="Save &amp; Publish" id="publish-submit">
+    </div>
+	</form>
+</div>

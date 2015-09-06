@@ -1,0 +1,10 @@
+
+globals:
+  -
+    section: css-section-name
+    name: global-var
+    value: value-of-global-var
+  -
+    section: css-section-name-2
+    name: global-var-2
+    value: value-of-global-var-2
