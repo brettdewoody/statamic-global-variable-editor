@@ -19,15 +19,24 @@ Installation & Setup
  For example, if you wanted to have an editable phone number global variable you would do this.
 
     global:
-    &nbsp;&nbsp;phone: 555-555-5555
+      - 
+        name: phone
+        display: Phone
+        value: 555-555-5555
 
  If you wanted to add another global variable, say an email address, your `global` variable would look like so:
 
     global:
-    &nbsp;&nbsp;phone: 555-555-5555
-    &nbsp;&nbsp;contact_email: you@yourdomain.com
+      - 
+        name: phone
+        display: Phone
+        value: 555-555-5555
+      - 
+        name: email
+        display: Email
+        value: you@yourdomain.com
 
-5. Display the global variables in your template using the `{{ global:NAME }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ global:phone }}` to our templates or layouts.
+5. Display the global variables in your template using the `{{ globes }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ globes name='phone' }}` to our templates or layouts.
 
 Usage
 -----
