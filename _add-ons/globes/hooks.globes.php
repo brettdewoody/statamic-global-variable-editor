@@ -23,12 +23,18 @@ class Hooks_globes extends Hooks {
 			authenticateForRole('admin');
 			doStatamicVersionCheck($app);
 
-			$data = $this->tasks->getThemeSettings();
-			$vars = Request::fetch('vars');
-			
-			$data['globals'] = array_merge($data['globals'], Request::fetch('vars'));
-			
-			File::put($this->tasks->getThemeSettingsPath(), YAML::dump($data));
+            $data = $this->tasks->getThemeSettings();
+            $vars = Request::fetch('globals');
+
+            foreach ($vars as $name => $var) {
+                foreach ($data['globals'] as $key => $item) {
+                    if ($item["name"] === $name) {
+                        $data['globals'][$key]['value'] = $var;
+                    }
+                }
+            }
+ 
+            File::put($this->tasks->getThemeSettingsPath(), YAML::dump($data, 1));
 
 			$app->flash('success', Localization::fetch('update_success'));
 

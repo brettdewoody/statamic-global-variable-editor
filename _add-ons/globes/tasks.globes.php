@@ -15,7 +15,6 @@ class Tasks_globes extends Tasks {
 	
 	public function getGlobals() {
 		$all = $this->getThemeSettings();
-		
 		return ($all['globals']);
 	}
 	
