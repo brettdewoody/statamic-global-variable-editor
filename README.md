@@ -42,6 +42,22 @@ Installation & Setup
 
 5. Display the global variables in your template using the `{{ globes }}` tag. In our example from before, if we wanted to display the phone number we would add `{{ globes name='phone' }}` to our templates or layouts.
 
+Fieldtypes
+-----
+
+Global variables can use a limited set of the [built-in fieldtypes in Statamic](http://statamic.com/learn/documentation/fieldtypes). Define the fieldtype using the `type` parameter. 
+
+```
+    global:
+      - 
+        name: phone
+        display: Phone
+        type: redactor
+        value: 555-555-5555
+```
+
+The allowed types are `text`, `redactor`, `date` and `time`. 
+
 Usage
 -----
 
