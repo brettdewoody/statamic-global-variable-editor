@@ -63,7 +63,7 @@ The allowed types are:
 * `date`
 * `markitup`
 * `radio`
-* `redactor`
+* `redactor` - no file uploads however
 * `select`
 * `tags`
 * `table`
