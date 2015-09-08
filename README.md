@@ -87,3 +87,14 @@ If you find the add-on useful and use it on projects consider buying me a beer. 
 <a href='https://pledgie.com/campaigns/26995'><img alt='Click here to lend your support to: Globes - Statamic Add-on and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/26995.png?skin_name=chrome' border='0' ></a>
 
 Thanks, and I hope you enjoy Globes and it makes your life better. Much, much better.
+
+Changelog
+-------
+
+**v2**
+
+* Addition of fieldtypes
+
+**v1**
+
+* Initial Release
