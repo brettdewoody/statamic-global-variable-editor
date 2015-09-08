@@ -56,7 +56,21 @@ Global variables can use a limited set of the [built-in fieldtypes in Statamic](
         value: 555-555-5555
 ```
 
-The allowed types are `text`, `redactor`, `date` and `time`. 
+The allowed types are:
+
+* `checkbox`
+* `checkboxes`
+* `date`
+* `markitup`
+* `radio`
+* `redactor`
+* `select`
+* `tags`
+* `table`
+* `text`
+* `textarea`
+* `time`
+* `users
 
 Usage
 -----
