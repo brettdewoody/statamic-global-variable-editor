@@ -1,7 +1,8 @@
 Statamic Add-on - Global Variable Editor
 ========================
+*By Brett DeWoody (2015) Version 2.0.0*
 
-An add-on for the [Statamic CMS](http://statamic.com/) to give admins the ability to edit a theme's global variables.
+An add-on for the [Statamic CMS](http://statamic.com/) to edit global variables through the control panel. Useful for editing common snippets of text used on the site. 
 
 Installation & Setup
 ------------
