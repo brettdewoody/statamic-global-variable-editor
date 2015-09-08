@@ -70,7 +70,7 @@ The allowed types are:
 * `text`
 * `textarea`
 * `time`
-* `users
+* `users`
 
 Usage
 -----
