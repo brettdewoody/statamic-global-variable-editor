@@ -2,7 +2,7 @@ Statamic Add-on - Global Variable Editor
 ========================
 *By Brett DeWoody (2015) Version 2.0.0*
 
-An add-on for the [Statamic CMS](http://statamic.com/) to edit global variables through the control panel. Useful for editing common snippets of text used on the site. 
+An add-on for the [Statamic CMS](http://statamic.com/) to edit global variables through the control panel. Useful for editing common snippets of text used on the site.
 
 Installation & Setup
 ------------
@@ -15,27 +15,27 @@ Installation & Setup
 
 4. Open `_themes/[theme-name]/theme.yaml` file and define the global variables you want to be editable.
 
- To make a variable editable, first create a first-level var of `global`, then nest your variables under the `global` var.
+ To make a variable editable, first create a first-level var of `globals`, then nest your variables under the `globals` var.
 
  For example, if you wanted to have an editable phone number global variable you would do this.
 
 ```
-    global:
-      - 
+    globals:
+      -
         name: phone
         display: Phone
         value: 555-555-5555
 ```
 
- If you wanted to add another global variable, say an email address, your `global` variable would look like so:
+ If you wanted to add another global variable, say an email address, your `globals` variable would look like so:
 
 ```
-    global:
-      - 
+    globals:
+      -
         name: phone
         display: Phone
         value: 555-555-5555
-      - 
+      -
         name: email
         display: Email
         value: you@yourdomain.com
@@ -46,11 +46,11 @@ Installation & Setup
 Fieldtypes
 -----
 
-Global variables can use a limited set of the [built-in fieldtypes in Statamic](http://statamic.com/learn/documentation/fieldtypes). Define the fieldtype using the `type` parameter. If no `type` is set the global variable will default to a `text` type.  
+Global variables can use a limited set of the [built-in fieldtypes in Statamic](http://statamic.com/learn/documentation/fieldtypes). Define the fieldtype using the `type` parameter. If no `type` is set the global variable will default to a `text` type.
 
 ```
-    global:
-      - 
+    globals:
+      -
         name: phone
         display: Phone
         type: redactor
